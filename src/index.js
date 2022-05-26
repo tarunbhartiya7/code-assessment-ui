@@ -12,10 +12,10 @@ import {
 import { setContext } from '@apollo/client/link/context'
 import { ThemeProvider } from '@mui/material/styles'
 import theme from './theme'
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom'
 
 const httpLink = new HttpLink({
-  uri: 'https://code-assessment-backend.herokuapp.com/',
+  uri: 'https://nodejs-assessment-poc.herokuapp.com/',
 })
 
 const authLink = setContext((_, { headers }) => {
